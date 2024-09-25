@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: arial,sans-serif ;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;  /*quitar el subrayado de las los elementos de la lista*/
+    cursor: pointer;   /*cuando pase el mouse por los link se active el cursor tipo manito*/
+}
+header{
+    width: 100%;
+    height: 60 px;
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;    
+}
+header nav .nav_right_section{
+    width: 250 px;  /*alto*/
+    height: auto;   /*ancho*/
+    display: flex;  /*posicionar verticalmente la lista*/
+    list-style: none;  /*quitarle las decoraciones a la lista, en este caso las viñetas en forma de puntos*/
+    justify-content: center;
+    align-items: center;  /*posicionar centralmente los items*/
+    
+}
+nav .nav_right_section a{  /*accediendo a la clase directamente al link*/
+    margin-right:10px ; /*separando los link entre ellos*/
+    color: black;   /*color fuente*/
+}
+nav .nav_right_section .menu_icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/162/162740.png); /*insertar un icono desde una dirección web*/
+    background-repeat: no-repeat; /*evitar que se repita la imagen insertada*/
+    background-position: center;  /*centrar la imagen insertada*/
+    background-size: contain;     /*igualar el tamaño de la imagen al contenedor propio de la misma*/
+    height: 25px;
+    margin-right: 10px;
+}
+nav .nav_right_section img{
+    border-radius: 50%; /*redondear los bordes del contenedor de imagen para que se torne circular*/
+}
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+.main_logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main_logo img{
+    width: 300px;
+}
+main .main_input {    /*estilo al input directamente*/
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main_input_container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #20212451;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main_input input {
+    width: 450px; /*ancho del input*/
+    height: 40px; /*alto del input*/
+    border: none;  /*quitar el borde del input central*/
+    outline: none;   /*quitar la linea exterior cuando se da clic en ella*/
+}
+main .main_input_container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main_input .search_icon {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lsdjHdWzbgDz4krzRbq5zyWZULldpum19Q&s');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+main .main_input .micro_icon{
+    background-image: url('data:image/png;base64,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');
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+main .main_buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+main .main_buttons div {
+    display: inline-block;  /*botones de forma horizontal*/
+
+}
+main .main_buttons button{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15 px ;
+    margin-right: 15px;
+}
+main .main_buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001; /*borde inferior del boton al pasar el mouse*/
+    color: #222;  /*fondo del buton al pasar el mouse*/
+}
+footer{
+    width: 100%;
+    height: 50 px;
+    position: absolute;  /*El footer vaya hasta el final de la página*/
+    bottom: 0;    /*El footer vaya hasta el final de la página*/
+    display: grid; /*distribucion en forma de cuadrícula para posicionarlo en columnas*/
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;   /*color fondo del contenedor*/
+    border-top: 1px solid #e4e4e4; /*borde superior del contenedor*/
+}
+footer ul {
+    margin: 10px;
+    list-style: none;/*quitar estilos por defecto*/
+    display: flex;  /*hacer que el contenido se ubique sobre la misma línea*/
+    padding: 0;    
+}
+footer .footer_left{
+    justify-self: left;
+    
+}
+footer .footer_right{
+    justify-self: right;
+}
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
